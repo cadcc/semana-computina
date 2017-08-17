@@ -7,7 +7,7 @@ tagline: desde el 21 al 24 de Agosto
 <div class="alert alert-dismissible alert-warning">
   <button type="button" class="close" data-dismiss="alert">&times;</button>
   <h4>Aviso</h4>
-  <p>Página en construcción</a></p>
+  <p>Página en construcción</p>
 </div>
 
 
