@@ -1,0 +1,277 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Testing Locally</title>
+    
+    <meta name="author" content="Jekyll Bootstrap3">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="/assets/themes/bootstrap/css/syntax-monokai-light.css" rel="stylesheet">
+    <link href="/assets/themes/bootstrap/resources/bootstrap/css/bootstrap-paper.min.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link href="/assets/themes/bootstrap/css/style.css" rel="stylesheet">
+  
+    <!--[if lt IE 9]>
+      <script src="/assets/themes/bootstrap/resources/respond/Respond.min.js"></script>
+    <![endif]-->
+
+    <link href="/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+    <link href="/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+
+  </head>
+
+  <body>
+     <nav class="navbar navbar-default" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+	  <a class="navbar-brand" href="/"><i class="fa fa-home"></i> Jekyll Bootstrap3</a>
+        </div>
+
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+          <ul class="nav navbar-nav">
+            
+            
+            
+
+
+  
+    
+      
+      	
+      	<li><a href="/archive">Archive</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/categories">Categories</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/pages">Pages</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/tags">Tags</a></li>
+      	
+      
+    
+  
+
+
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      
+
+<div class="page-header">
+  <h1>Testing Locally <small>How to test your Jekyll site locally</small></h1>
+</div>
+
+<div class="row post-full">
+  <div class="col-md-12">
+    <div class="date">
+      <span>17 January 2016</span>
+    </div>
+    <div class="content">
+      
+<p>In this tutorial I will teach you <em>how to test your Jekyll Bootstrap3</em> site locally.</p>
+
+<p>Jekyll is a parsing engine bundled as a ruby gem used to build static websites from
+dynamic components such as templates, partials, liquid code, markdown, etc. Jekyll is known as “a simple, blog aware, static site generator”.</p>
+
+<p>To test your site locally, you’ll need</p>
+
+<ul>
+  <li><a href="https://www.ruby-lang.org/en/">ruby</a></li>
+  <li><a href="https://http://jekyllrb.com/">Jekyll</a></li>
+  <li><a href="https://github.com/github/pages-gem">github-pages</a> gem</li>
+</ul>
+
+<!--more-->
+
+<h3 id="installing-ruby">Installing ruby</h3>
+
+<p>There are
+<a href="https://www.ruby-lang.org/en/installation/">lots of different ways to install ruby</a>.</p>
+
+<p>In Mac OS X, older versions of ruby will already be installed.  But I
+use the <a href="http://rvm.io/">Ruby Version Manager (RVM)</a> to have a more
+recent version.  You could also use <a href="http://brew.sh/">Homebrew</a>.</p>
+
+<p>In Windows, use <a href="http://rubyinstaller.org/">RubyInstaller</a>. (In most
+of this tutorial, I’ve assumed you’re using a Mac or some flavor of
+Unix. It’s possible that none of this was usable for Windows
+folks. Sorry!)</p>
+
+<h3 id="installing-the-github-pages-gem">Installing the github-pages gem</h3>
+
+<p>Run the following command:</p>
+
+<div class="highlighter-rouge"><pre class="codehilite"><code>gem install github-pages
+</code></pre></div>
+
+<p>This will install the <code class="highlighter-rouge">github-pages</code> gem and all dependencies
+(including <a href="http://jekyllrb.com/">jekyll</a>).</p>
+
+<p>Later, to update the gem, type:</p>
+
+<div class="highlighter-rouge"><pre class="codehilite"><code>gem update github-pages
+</code></pre></div>
+
+<h3 id="testing-your-site-locally">Testing your site locally</h3>
+
+<p>To construct and test your site locally, go into the directory and
+type</p>
+
+<div class="highlighter-rouge"><pre class="codehilite"><code>jekyll build
+</code></pre></div>
+
+<p>This will create (or modify) a <code class="highlighter-rouge">_site/</code> directory, containing
+everything from <code class="highlighter-rouge">assets/</code>, and then the <code class="highlighter-rouge">index.md</code> and all
+<code class="highlighter-rouge">pages/*.md</code> files, converted to html. (So there’ll be
+<code class="highlighter-rouge">_site/index.html</code> and the various <code class="highlighter-rouge">_site/pages/*.html</code>.)</p>
+
+<p>Type the following in order to “serve” the site.
+This will first run <code class="highlighter-rouge">build</code>, and so it does <em>not</em> need to be
+preceded by <code class="highlighter-rouge">jekyll build</code>.</p>
+
+<div class="highlighter-rouge"><pre class="codehilite"><code>jekyll serve
+</code></pre></div>
+
+<p>To make jekyll automatically re-build your changes you can also add the <code class="highlighter-rouge">--watch</code> option:</p>
+
+<div class="highlighter-rouge"><pre class="codehilite"><code>jekyll serve --watch
+</code></pre></div>
+
+<p>Now open your browser and go to <a href="http://localhost:4000">http://localhost:4000</a>.</p>
+
+<p>Read the complete tutorial on <a href="http://jekyllrb.com/docs/usage/">http://jekyllrb.com/docs/usage/</a>.</p>
+
+<h2 id="license">License</h2>
+
+<p><a href="http://opensource.org/licenses/MIT">MIT</a></p>
+
+    </div>
+
+    
+    <br>
+    <h4>Categories</h4>
+      <ul class="nav nav-pills">
+	      <!-- <li><i class="icon-folder-open"></i></li> -->
+        
+        
+
+
+  
+     
+    	<li><a href="/categories.html#lessons-ref">
+    		lessons <span class="badge">3</span>
+    	</a></li>
+    
+  
+
+
+
+      </ul>
+    
+
+    
+    <h4>Tags</h4>
+      <ul class="nav nav-pills">
+	      <!-- <li><i class="icon-tags"></i></li> -->
+        
+        
+
+
+  
+     
+    	<li><a href="/tags.html#intro-ref">intro <span class="badge">2</span></a></li>
+     
+    	<li><a href="/tags.html#beginner-ref">beginner <span class="badge">2</span></a></li>
+     
+    	<li><a href="/tags.html#jekyll-ref">jekyll <span class="badge">3</span></a></li>
+     
+    	<li><a href="/tags.html#tutorial-ref">tutorial <span class="badge">2</span></a></li>
+    
+  
+
+
+
+      </ul>
+    
+
+    <hr>
+    
+    <ul class="pagination">
+      
+        <li class="prev"><a href="/lessons/2014/02/13/syntax-highlight-example" title="Syntax Highlight Example">&larr; Previous</a></li>
+      
+        <li><a href="/archive.html">Archive</a></li>
+      
+        <li class="next disabled"><a>Next &rarr;</a></li>
+      
+    </ul>
+    <hr>
+    
+  </div>
+</div>
+
+
+      <hr>
+      <footer>
+        <p>
+          &copy; 2017 Jekyll Bootstrap3
+          <span class="pull-right text-muted">
+            powered by
+            <a href="http://sentenza.github.io/jekyll-material-design" target="_blank" title="Jekyll-Bootstrap3 Blogging Framework flavoured with Material Design">Jekyll-Material-Design</a>
+          </span>
+        </p>
+      </footer>
+    </div>
+
+    
+    <script src="/assets/themes/bootstrap/resources/jquery/jquery-2.2.0.min.js"></script>
+    <script src="/assets/themes/bootstrap/resources/bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>
+

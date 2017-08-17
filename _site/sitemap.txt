@@ -1,0 +1,13 @@
+
+http://sentenza.github.io/jekyll-material-design/archive
+http://sentenza.github.io/jekyll-material-design/atom.xml
+http://sentenza.github.io/jekyll-material-design/categories
+http://sentenza.github.io/jekyll-material-design/
+http://sentenza.github.io/jekyll-material-design/pages
+http://sentenza.github.io/jekyll-material-design/rss.xml
+http://sentenza.github.io/jekyll-material-design/sitemap.txt
+http://sentenza.github.io/jekyll-material-design/tags
+
+http://sentenza.github.io/jekyll-material-design/lessons/2016/01/17/testing-locally
+http://sentenza.github.io/jekyll-material-design/lessons/2014/02/13/syntax-highlight-example
+http://sentenza.github.io/jekyll-material-design/lessons/2014/02/10/jekyll-intro

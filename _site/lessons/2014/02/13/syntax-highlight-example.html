@@ -1,0 +1,258 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Syntax Highlight Example</title>
+    
+    <meta name="author" content="Jekyll Bootstrap3">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="/assets/themes/bootstrap/css/syntax-monokai-light.css" rel="stylesheet">
+    <link href="/assets/themes/bootstrap/resources/bootstrap/css/bootstrap-paper.min.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link href="/assets/themes/bootstrap/css/style.css" rel="stylesheet">
+  
+    <!--[if lt IE 9]>
+      <script src="/assets/themes/bootstrap/resources/respond/Respond.min.js"></script>
+    <![endif]-->
+
+    <link href="/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+    <link href="/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+
+  </head>
+
+  <body>
+     <nav class="navbar navbar-default" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+	  <a class="navbar-brand" href="/"><i class="fa fa-home"></i> Jekyll Bootstrap3</a>
+        </div>
+
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+          <ul class="nav navbar-nav">
+            
+            
+            
+
+
+  
+    
+      
+      	
+      	<li><a href="/archive">Archive</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/categories">Categories</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/pages">Pages</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/tags">Tags</a></li>
+      	
+      
+    
+  
+
+
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      
+
+<div class="page-header">
+  <h1>Syntax Highlight Example <small>Supporting tagline</small></h1>
+</div>
+
+<div class="row post-full">
+  <div class="col-md-12">
+    <div class="date">
+      <span>13 February 2014</span>
+    </div>
+    <div class="content">
+      
+<p>An example post about code insertion into posts.</p>
+
+<!--more-->
+<h2 id="testing-code-snippet-highlight">Testing code snippet highlight</h2>
+
+<p>The following example shows how to highlight a piece of code throughout the use of pygments:</p>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="k">class</span> <span class="nc">Singleton</span><span class="p">(</span><span class="nb">type</span><span class="p">):</span>
+    <span class="s">"""Base metaclass for Singleton pattern
+@see http://stackoverflow.com/a/6798042/1977778
+"""</span>
+    <span class="n">_instances</span> <span class="o">=</span> <span class="p">{}</span>
+    <span class="k">def</span> <span class="nf">__call__</span><span class="p">(</span><span class="n">cls</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">cls</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">cls</span><span class="o">.</span><span class="n">_instances</span><span class="p">:</span>
+            <span class="n">cls</span><span class="o">.</span><span class="n">_instances</span><span class="p">[</span><span class="n">cls</span><span class="p">]</span> <span class="o">=</span> <span class="nb">super</span><span class="p">(</span><span class="n">Singleton</span><span class="p">,</span> <span class="n">cls</span><span class="p">)</span><span class="o">.</span><span class="n">__call__</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+        <span class="c"># If you want to run __init__ every time the class is called, add the following else condition</span>
+        <span class="c"># else:</span>
+        <span class="c"># cls._instances[cls].__init__(*args, **kwargs)</span>
+        <span class="k">return</span> <span class="n">cls</span><span class="o">.</span><span class="n">_instances</span><span class="p">[</span><span class="n">cls</span><span class="p">]</span></code></pre></figure>
+
+<h2 id="code-highlighting-with-redcarpet">Code highlighting with redcarpet</h2>
+
+<p>Another snippet rendered with the most common Github code syntax:</p>
+
+<div class="language-python highlighter-rouge"><pre class="codehilite"><code>    <span class="k">def</span> <span class="nf">strip_nonascii</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">s</span><span class="p">):</span>
+        <span class="s">"""This method remove non-ascii chars from argument"""</span>
+        <span class="k">return</span> <span class="n">ud</span><span class="o">.</span><span class="n">normalize</span><span class="p">(</span><span class="s">'NFKD'</span><span class="p">,</span> <span class="nb">unicode</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="p">)</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s">'ascii'</span><span class="p">,</span><span class="s">'ignore'</span><span class="p">)</span>
+
+
+    <span class="nd">@db_commit</span>
+    <span class="k">def</span> <span class="nf">create_users_table</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">cursor</span><span class="p">):</span>
+
+        <span class="s">""" Check the existence of the users log table, otherwise create it """</span>
+
+        <span class="k">pass</span>
+</code></pre></div>
+
+<div class="language-scala highlighter-rouge"><pre class="codehilite"><code>
+<span class="k">package</span> <span class="nn">astrac.akka.askretry</span>
+
+<span class="k">import</span> <span class="nn">akka.actor._</span>
+<span class="k">import</span> <span class="nn">akka.util.Timeout</span>
+<span class="k">import</span> <span class="nn">akka.pattern.ask</span>
+<span class="k">import</span> <span class="nn">scala.concurrent.duration._</span>
+<span class="k">import</span> <span class="nn">scala.concurrent.Future</span>
+
+<span class="k">object</span> <span class="nc">RetryingActor</span> <span class="o">{</span>
+  <span class="k">case</span> <span class="k">class</span> <span class="nc">Ask</span><span class="o">[</span><span class="kt">T</span><span class="o">](</span><span class="n">target</span><span class="k">:</span> <span class="kt">ActorRef</span><span class="o">,</span> <span class="n">message</span><span class="k">:</span> <span class="kt">T</span><span class="o">,</span> <span class="n">rate</span><span class="k">:</span> <span class="kt">FiniteDuration</span><span class="o">,</span>
+  <span class="n">maxAttempts</span><span class="k">:</span> <span class="kt">Int</span><span class="o">)</span>
+    <span class="k">case</span> <span class="k">object</span> <span class="nc">Retry</span>
+    
+      <span class="k">case</span> <span class="k">class</span> <span class="nc">RetryException</span><span class="o">(</span><span class="n">attempts</span><span class="k">:</span> <span class="kt">Int</span><span class="o">)</span> <span class="k">extends</span> <span class="nc">Exception</span><span class="o">(</span><span class="n">s</span><span class="s">"Cannot retry
+      after $attempts attempts"</span><span class="o">)</span>
+      
+        <span class="k">def</span> <span class="n">props</span><span class="o">[</span><span class="kt">T</span><span class="o">]</span> <span class="k">=</span> <span class="nc">Props</span><span class="o">[</span><span class="kt">RetryingActor</span><span class="o">]</span>
+        <span class="o">}</span>
+</code></pre></div>
+
+<p><strong>Check the markdown of this example in order to fully comprehend the correct syntax.</strong></p>
+
+<p><a href="https://github.com/sentenza/sentenza.github.io/issues/1">Here</a> you can find more detailed information.</p>
+
+    </div>
+
+    
+    <br>
+    <h4>Categories</h4>
+      <ul class="nav nav-pills">
+	      <!-- <li><i class="icon-folder-open"></i></li> -->
+        
+        
+
+
+  
+     
+    	<li><a href="/categories.html#lessons-ref">
+    		lessons <span class="badge">3</span>
+    	</a></li>
+    
+  
+
+
+
+      </ul>
+    
+
+    
+    <h4>Tags</h4>
+      <ul class="nav nav-pills">
+	      <!-- <li><i class="icon-tags"></i></li> -->
+        
+        
+
+
+  
+     
+    	<li><a href="/tags.html#jekyll-ref">jekyll <span class="badge">3</span></a></li>
+     
+    	<li><a href="/tags.html#code-ref">code <span class="badge">1</span></a></li>
+    
+  
+
+
+
+      </ul>
+    
+
+    <hr>
+    
+    <ul class="pagination">
+      
+        <li class="prev"><a href="/lessons/2014/02/10/jekyll-intro" title="Jekyll Intro">&larr; Previous</a></li>
+      
+        <li><a href="/archive.html">Archive</a></li>
+      
+        <li class="next"><a href="/lessons/2016/01/17/testing-locally" title="Testing Locally">Next &rarr;</a></li>
+      
+    </ul>
+    <hr>
+    
+  </div>
+</div>
+
+
+      <hr>
+      <footer>
+        <p>
+          &copy; 2017 Jekyll Bootstrap3
+          <span class="pull-right text-muted">
+            powered by
+            <a href="http://sentenza.github.io/jekyll-material-design" target="_blank" title="Jekyll-Bootstrap3 Blogging Framework flavoured with Material Design">Jekyll-Material-Design</a>
+          </span>
+        </p>
+      </footer>
+    </div>
+
+    
+    <script src="/assets/themes/bootstrap/resources/jquery/jquery-2.2.0.min.js"></script>
+    <script src="/assets/themes/bootstrap/resources/bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>
+
