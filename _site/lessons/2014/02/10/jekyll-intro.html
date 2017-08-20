@@ -25,81 +25,15 @@
   </head>
 
   <body>
-     <nav class="navbar navbar-default" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-	  <a class="navbar-brand" href="/"><i class="fa fa-home"></i> Jekyll Bootstrap3</a>
-        </div>
+    <nav class="navbar navbar-default">
+  <div class="container-fluid">
+     
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <p><img src="/assets/images/logo_semana_computina.svg" style="width: 20%;max-height: 20%"></p>
+    </div>
+  </div>
+</nav>
 
-        <div class="collapse navbar-collapse navbar-ex1-collapse">
-          <ul class="nav navbar-nav">
-            
-            
-            
-
-
-  
-    
-      
-      	
-      	<li><a href="/archive">Archive</a></li>
-      	
-      
-    
-  
-    
-      
-    
-  
-    
-      
-      	
-      	<li><a href="/categories">Categories</a></li>
-      	
-      
-    
-  
-    
-      
-    
-  
-    
-      
-      	
-      	<li><a href="/pages">Pages</a></li>
-      	
-      
-    
-  
-    
-      
-    
-  
-    
-      
-    
-  
-    
-      
-      	
-      	<li><a href="/tags">Tags</a></li>
-      	
-      
-    
-  
-
-
-
-          </ul>
-        </div>
-      </div>
-    </nav>
     <div class="container">
       
 
@@ -114,7 +48,7 @@
     </div>
     <div class="content">
       
-<p><img src="/jekyll-material-design/assets/images/jekyll-logo-light-solid.png" alt="Jekyll Logo" /></p>
+<p><img src="http://localhost:4000/jekyll-material-design/assets/images/jekyll-logo-light-solid.png" alt="Jekyll Logo" /></p>
 
 <p>Jekyll is a parsing engine bundled as a ruby gem used to build static websites from
 dynamic components such as templates, partials, liquid code, markdown, etc. Jekyll is known as “a simple, blog aware, static site generator”.</p>
@@ -183,7 +117,7 @@ Jekyll-bootstrap conveniently provides the base directory format.</p>
 
 <p>Jekyll expects your website directory to be laid out like so:</p>
 
-<div class="highlighter-rouge"><pre class="codehilite"><code>.
+<div class="highlighter-rouge"><pre class="highlight"><code>.
 |-- _config.yml
 |-- _includes
 |-- _layouts
@@ -198,7 +132,8 @@ Jekyll-bootstrap conveniently provides the base directory format.</p>
     |-- css
         |-- style.css
     |-- javascripts
-</code></pre></div>
+</code></pre>
+</div>
 
 <ul>
   <li>
@@ -252,8 +187,9 @@ Both posts and pages can have meta-data assigned on a per-page basis such as tit
 <p><strong>Creating a Post</strong> <br />
 Posts are created by properly formatting a file and placing it the <code class="highlighter-rouge">_posts</code> folder. This operation is automated with the help of <code class="highlighter-rouge">rake</code>:</p>
 
-<div class="highlighter-rouge"><pre class="codehilite"><code>rake post title="A Title" [date="2012-02-09"] [tags=[tag1, tag2]]
-</code></pre></div>
+<div class="highlighter-rouge"><pre class="highlight"><code>rake post title="A Title" [date="2012-02-09"] [tags=[tag1, tag2]]
+</code></pre>
+</div>
 
 <p><strong>Formatting</strong><br />
 A post must have a valid filename in the form <code class="highlighter-rouge">YEAR-MONTH-DATE-title.MARKUP</code> and be placed in the <code class="highlighter-rouge">_posts</code> directory. 
@@ -279,11 +215,12 @@ Note categories in Jekyll work in a specific way.
 If you define more than one category you are defining a category hierarchy “set”.
 Example:</p>
 
-<div class="highlighter-rouge"><pre class="codehilite"><code>---
+<div class="highlighter-rouge"><pre class="highlight"><code>---
 title :  Hello World
 categories : [lessons, beginner]
 ---
-</code></pre></div>
+</code></pre>
+</div>
 
 <p>This defines the category hierarchy “lessons/beginner”. Note this is <em>one category</em> node in Jekyll.
 You won’t find “lessons” and “beginner” as two separate categories unless you define them elsewhere as singular categories.</p>
@@ -304,11 +241,12 @@ Pages do not compute categories nor tags so defining them will have no effect.</
 If pages are defined in sub-directories, the path to the page will be reflected in the url.
 Example:</p>
 
-<div class="highlighter-rouge"><pre class="codehilite"><code>.
+<div class="highlighter-rouge"><pre class="highlight"><code>.
 |-- people
     |-- bob
         |-- essay.html
-</code></pre></div>
+</code></pre>
+</div>
 
 <p>This page will be available at <code class="highlighter-rouge">http://yourdomain.com/people/bob/essay.html</code></p>
 
@@ -444,14 +382,15 @@ This is the only way Jekyll knows you want the file processed.</p>
 
 <p>YAML Front Matter must be prepended to the top of template/post/page files:</p>
 
-<div class="highlighter-rouge"><pre class="codehilite"><code>---
+<div class="highlighter-rouge"><pre class="highlight"><code>---
 layout: post
 category : pages
 tags : [how-to, jekyll]
 ---
 
 ... contents ...
-</code></pre></div>
+</code></pre>
+</div>
 
 <p>Three hyphens on a new line start the Front-Matter block and three hyphens on a new line end the block.
 The data inside the block must be valid YAML.</p>

@@ -4,7 +4,7 @@
  <title>Jekyll Bootstrap3</title>
  <link href="http://sentenza.github.io/jekyll-material-design/" rel="self"/>
  <link href="http://sentenza.github.io/jekyll-material-design"/>
- <updated>2017-08-16T23:54:34-03:00</updated>
+ <updated>2017-08-19T22:47:18-03:00</updated>
  <id>http://sentenza.github.io/jekyll-material-design</id>
  <author>
    <name>Jekyll Bootstrap3</name>
@@ -51,24 +51,27 @@ folks. Sorry!)&lt;/p&gt;
 
 &lt;p&gt;Run the following command:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;codehilite&quot;&gt;&lt;code&gt;gem install github-pages
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gem install github-pages
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;This will install the &lt;code class=&quot;highlighter-rouge&quot;&gt;github-pages&lt;/code&gt; gem and all dependencies
 (including &lt;a href=&quot;http://jekyllrb.com/&quot;&gt;jekyll&lt;/a&gt;).&lt;/p&gt;
 
 &lt;p&gt;Later, to update the gem, type:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;codehilite&quot;&gt;&lt;code&gt;gem update github-pages
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gem update github-pages
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;h3 id=&quot;testing-your-site-locally&quot;&gt;Testing your site locally&lt;/h3&gt;
 
 &lt;p&gt;To construct and test your site locally, go into the directory and
 type&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;codehilite&quot;&gt;&lt;code&gt;jekyll build
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;jekyll build
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;This will create (or modify) a &lt;code class=&quot;highlighter-rouge&quot;&gt;_site/&lt;/code&gt; directory, containing
 everything from &lt;code class=&quot;highlighter-rouge&quot;&gt;assets/&lt;/code&gt;, and then the &lt;code class=&quot;highlighter-rouge&quot;&gt;index.md&lt;/code&gt; and all
@@ -79,13 +82,15 @@ everything from &lt;code class=&quot;highlighter-rouge&quot;&gt;assets/&lt;/code
 This will first run &lt;code class=&quot;highlighter-rouge&quot;&gt;build&lt;/code&gt;, and so it does &lt;em&gt;not&lt;/em&gt; need to be
 preceded by &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll build&lt;/code&gt;.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;codehilite&quot;&gt;&lt;code&gt;jekyll serve
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;jekyll serve
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;To make jekyll automatically re-build your changes you can also add the &lt;code class=&quot;highlighter-rouge&quot;&gt;--watch&lt;/code&gt; option:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;codehilite&quot;&gt;&lt;code&gt;jekyll serve --watch
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;jekyll serve --watch
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;Now open your browser and go to &lt;a href=&quot;http://localhost:4000&quot;&gt;http://localhost:4000&lt;/a&gt;.&lt;/p&gt;
 
@@ -127,9 +132,9 @@ preceded by &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll build&lt;/cod
 
 &lt;p&gt;Another snippet rendered with the most common Github code syntax:&lt;/p&gt;
 
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;codehilite&quot;&gt;&lt;code&gt;    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;strip_nonascii&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;strip_nonascii&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
         &lt;span class=&quot;s&quot;&gt;&quot;&quot;&quot;This method remove non-ascii chars from argument&quot;&quot;&quot;&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ud&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;normalize&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;NFKD&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;unicode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;encode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;ascii&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;ignore&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ud&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;normalize&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'NFKD'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;unicode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;encode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'ascii'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'ignore'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 
 
     &lt;span class=&quot;nd&quot;&gt;@db_commit&lt;/span&gt;
@@ -138,9 +143,10 @@ preceded by &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll build&lt;/cod
         &lt;span class=&quot;s&quot;&gt;&quot;&quot;&quot; Check the existence of the users log table, otherwise create it &quot;&quot;&quot;&lt;/span&gt;
 
         &lt;span class=&quot;k&quot;&gt;pass&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
-&lt;div class=&quot;language-scala highlighter-rouge&quot;&gt;&lt;pre class=&quot;codehilite&quot;&gt;&lt;code&gt;
+&lt;div class=&quot;language-scala highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
 &lt;span class=&quot;k&quot;&gt;package&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;astrac.akka.askretry&lt;/span&gt;
 
 &lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;akka.actor._&lt;/span&gt;
@@ -159,7 +165,8 @@ preceded by &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll build&lt;/cod
       
         &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;props&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;T&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Props&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;RetryingActor&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;
         &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;&lt;strong&gt;Check the markdown of this example in order to fully comprehend the correct syntax.&lt;/strong&gt;&lt;/p&gt;
 
@@ -173,7 +180,7 @@ preceded by &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll build&lt;/cod
    <updated>2014-02-10T00:00:00-03:00</updated>
    <id>http://sentenza.github.io/jekyll-material-design/lessons/2014/02/10/jekyll-intro</id>
    <content type="html">
-&lt;p&gt;&lt;img src=&quot;/jekyll-material-design/assets/images/jekyll-logo-light-solid.png&quot; alt=&quot;Jekyll Logo&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/jekyll-material-design/assets/images/jekyll-logo-light-solid.png&quot; alt=&quot;Jekyll Logo&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Jekyll is a parsing engine bundled as a ruby gem used to build static websites from
 dynamic components such as templates, partials, liquid code, markdown, etc. Jekyll is known as “a simple, blog aware, static site generator”.&lt;/p&gt;
@@ -242,7 +249,7 @@ Jekyll-bootstrap conveniently provides the base directory format.&lt;/p&gt;
 
 &lt;p&gt;Jekyll expects your website directory to be laid out like so:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;codehilite&quot;&gt;&lt;code&gt;.
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;.
 |-- _config.yml
 |-- _includes
 |-- _layouts
@@ -257,7 +264,8 @@ Jekyll-bootstrap conveniently provides the base directory format.&lt;/p&gt;
     |-- css
         |-- style.css
     |-- javascripts
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;ul&gt;
   &lt;li&gt;
@@ -311,8 +319,9 @@ Both posts and pages can have meta-data assigned on a per-page basis such as tit
 &lt;p&gt;&lt;strong&gt;Creating a Post&lt;/strong&gt; &lt;br /&gt;
 Posts are created by properly formatting a file and placing it the &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; folder. This operation is automated with the help of &lt;code class=&quot;highlighter-rouge&quot;&gt;rake&lt;/code&gt;:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;codehilite&quot;&gt;&lt;code&gt;rake post title=&quot;A Title&quot; [date=&quot;2012-02-09&quot;] [tags=[tag1, tag2]]
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;rake post title=&quot;A Title&quot; [date=&quot;2012-02-09&quot;] [tags=[tag1, tag2]]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;&lt;strong&gt;Formatting&lt;/strong&gt;&lt;br /&gt;
 A post must have a valid filename in the form &lt;code class=&quot;highlighter-rouge&quot;&gt;YEAR-MONTH-DATE-title.MARKUP&lt;/code&gt; and be placed in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. 
@@ -338,11 +347,12 @@ Note categories in Jekyll work in a specific way.
 If you define more than one category you are defining a category hierarchy “set”.
 Example:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;codehilite&quot;&gt;&lt;code&gt;---
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;---
 title :  Hello World
 categories : [lessons, beginner]
 ---
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;This defines the category hierarchy “lessons/beginner”. Note this is &lt;em&gt;one category&lt;/em&gt; node in Jekyll.
 You won’t find “lessons” and “beginner” as two separate categories unless you define them elsewhere as singular categories.&lt;/p&gt;
@@ -363,11 +373,12 @@ Pages do not compute categories nor tags so defining them will have no effect.&l
 If pages are defined in sub-directories, the path to the page will be reflected in the url.
 Example:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;codehilite&quot;&gt;&lt;code&gt;.
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;.
 |-- people
     |-- bob
         |-- essay.html
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;This page will be available at &lt;code class=&quot;highlighter-rouge&quot;&gt;http://yourdomain.com/people/bob/essay.html&lt;/code&gt;&lt;/p&gt;
 
@@ -503,14 +514,15 @@ This is the only way Jekyll knows you want the file processed.&lt;/p&gt;
 
 &lt;p&gt;YAML Front Matter must be prepended to the top of template/post/page files:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;codehilite&quot;&gt;&lt;code&gt;---
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;---
 layout: post
 category : pages
 tags : [how-to, jekyll]
 ---
 
 ... contents ...
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;Three hyphens on a new line start the Front-Matter block and three hyphens on a new line end the block.
 The data inside the block must be valid YAML.&lt;/p&gt;

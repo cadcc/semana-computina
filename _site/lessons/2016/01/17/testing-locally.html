@@ -25,81 +25,15 @@
   </head>
 
   <body>
-     <nav class="navbar navbar-default" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-	  <a class="navbar-brand" href="/"><i class="fa fa-home"></i> Jekyll Bootstrap3</a>
-        </div>
+    <nav class="navbar navbar-default">
+  <div class="container-fluid">
+     
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <p><img src="/assets/images/logo_semana_computina.svg" style="width: 20%;max-height: 20%"></p>
+    </div>
+  </div>
+</nav>
 
-        <div class="collapse navbar-collapse navbar-ex1-collapse">
-          <ul class="nav navbar-nav">
-            
-            
-            
-
-
-  
-    
-      
-      	
-      	<li><a href="/archive">Archive</a></li>
-      	
-      
-    
-  
-    
-      
-    
-  
-    
-      
-      	
-      	<li><a href="/categories">Categories</a></li>
-      	
-      
-    
-  
-    
-      
-    
-  
-    
-      
-      	
-      	<li><a href="/pages">Pages</a></li>
-      	
-      
-    
-  
-    
-      
-    
-  
-    
-      
-    
-  
-    
-      
-      	
-      	<li><a href="/tags">Tags</a></li>
-      	
-      
-    
-  
-
-
-
-          </ul>
-        </div>
-      </div>
-    </nav>
     <div class="container">
       
 
@@ -147,24 +81,27 @@ folks. Sorry!)</p>
 
 <p>Run the following command:</p>
 
-<div class="highlighter-rouge"><pre class="codehilite"><code>gem install github-pages
-</code></pre></div>
+<div class="highlighter-rouge"><pre class="highlight"><code>gem install github-pages
+</code></pre>
+</div>
 
 <p>This will install the <code class="highlighter-rouge">github-pages</code> gem and all dependencies
 (including <a href="http://jekyllrb.com/">jekyll</a>).</p>
 
 <p>Later, to update the gem, type:</p>
 
-<div class="highlighter-rouge"><pre class="codehilite"><code>gem update github-pages
-</code></pre></div>
+<div class="highlighter-rouge"><pre class="highlight"><code>gem update github-pages
+</code></pre>
+</div>
 
 <h3 id="testing-your-site-locally">Testing your site locally</h3>
 
 <p>To construct and test your site locally, go into the directory and
 type</p>
 
-<div class="highlighter-rouge"><pre class="codehilite"><code>jekyll build
-</code></pre></div>
+<div class="highlighter-rouge"><pre class="highlight"><code>jekyll build
+</code></pre>
+</div>
 
 <p>This will create (or modify) a <code class="highlighter-rouge">_site/</code> directory, containing
 everything from <code class="highlighter-rouge">assets/</code>, and then the <code class="highlighter-rouge">index.md</code> and all
@@ -175,13 +112,15 @@ everything from <code class="highlighter-rouge">assets/</code>, and then the <co
 This will first run <code class="highlighter-rouge">build</code>, and so it does <em>not</em> need to be
 preceded by <code class="highlighter-rouge">jekyll build</code>.</p>
 
-<div class="highlighter-rouge"><pre class="codehilite"><code>jekyll serve
-</code></pre></div>
+<div class="highlighter-rouge"><pre class="highlight"><code>jekyll serve
+</code></pre>
+</div>
 
 <p>To make jekyll automatically re-build your changes you can also add the <code class="highlighter-rouge">--watch</code> option:</p>
 
-<div class="highlighter-rouge"><pre class="codehilite"><code>jekyll serve --watch
-</code></pre></div>
+<div class="highlighter-rouge"><pre class="highlight"><code>jekyll serve --watch
+</code></pre>
+</div>
 
 <p>Now open your browser and go to <a href="http://localhost:4000">http://localhost:4000</a>.</p>
 
