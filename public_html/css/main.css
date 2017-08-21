@@ -1,7 +1,7 @@
 header.masthead {
     text-align: center;
     color: white;
-    background-image: url("../img/header-bg.jpg");
+    background-image: url("../img/header-bg.png");
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center center;
@@ -137,3 +137,13 @@ opacity: 0; }
  .navbar-brand img {
    width:200px;
  }
+
+.intro-heading  {
+  background: rgba(0,0,0,0.6);
+  border-radius:30px;
+  padding:20px;
+}
+
+.img-responsive {
+  border-radius:10%;
+}
